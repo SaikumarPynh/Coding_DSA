@@ -20,3 +20,21 @@ input :
 Output :
 4  -> Row 4 has maximum number of 1’s"""
 
+# Define a 2D array (3x3 matrix) filled with zeros
+rows, cols = 3, 3
+matrix = [[int(input())for _ in range(cols)] for _ in range(rows)]
+
+# Print the 2D array
+for row in matrix:
+    print(row)
+x = [0,1,2]
+m = 0
+i = 0
+res = 0
+for row in matrix:
+    x[i] = sum(row)
+    if x[i] > m:
+        m = x[i]
+        res = i + 1
+    i += 1
+print(m,res)
