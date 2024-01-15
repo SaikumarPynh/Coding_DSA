@@ -27,7 +27,7 @@ def oddballoons(arr):
             count += 1
     if count < 1:
         print("no color repeated odd times")
-
+#empty array
 arr = []
 for i in range(int(input("enter the number of elements:"))):
     arr.append(input("enter the color:"))
