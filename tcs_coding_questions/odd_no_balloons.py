@@ -17,7 +17,7 @@ g: 2 balloons
 b:  2 balloons
 y : 2 balloons
 Hence , r is only the balloon which is odd in number."""
-
+#method declaration
 def oddballoons(arr):
     count = 0
     s = set(arr)
@@ -27,8 +27,6 @@ def oddballoons(arr):
             count += 1
     if count < 1:
         print("no color repeated odd times")
-
-
 
 arr = []
 for i in range(int(input("enter the number of elements:"))):
