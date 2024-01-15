@@ -15,7 +15,7 @@ TW =130 FW=70
 Explanation:
 130+70 = 200 vehicles
 (70*4)+(130*2)= 540 wheels"""
-
+#method declaration
 def find_vehicle(v,w):
      # Equation 1: V = TW + FW
     # Equation 2: W = 2 * TW + 4 * FW
@@ -32,12 +32,6 @@ def find_vehicle(v,w):
     fw = (w - (2 * v) ) // 2
     tw = v - fw
     return f"total two wheelers are{tw} and four wheelers are {fw}"
-
-
-
-
-
-
 v = int(input("enter the number of vehicles:"))
 w = int(input("enter the number of wheels:"))
 print(find_vehicle(v,w))
