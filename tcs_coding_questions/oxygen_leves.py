@@ -37,10 +37,10 @@ Oxygen value of trainee 1
 Oxygen value of trainee 2
 Oxygen value of trainee 3
 Round 3
-
 Oxygen value of trainee 1
 Oxygen value of trainee 2
-Oxygen value of trainee 3"""
+Oxygen value of trainee 3
+"""
 import numpy as np
 
 def oxygen_levels(arr):
