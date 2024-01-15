@@ -41,11 +41,27 @@ Round 3
 Oxygen value of trainee 1
 Oxygen value of trainee 2
 Oxygen value of trainee 3"""
+import numpy as np
+
 def oxygen_levels(arr):
-    return arr         
+    column_sums = arr.sum(axis = 0)
+    c = list(column_sums)
+
+    max = 0
+    res = 1
+    for i in range(len(c)):
+        if c[i] > max:
+            max = c[i]
+            res = i + 1
+
+
+        
+    return res
+
+                  
 
 b = int(input("enter the batch  size"))
-arr = [[int(input("enter the element:"))for i in range(b)] for j in range(b)]
+arr = np.array([[int(input("enter the element:"))for i in range(b)] for j in range(b)])
 
-
+print(arr)
 print(oxygen_levels(arr))
