@@ -1,5 +1,5 @@
+#import statements
 import random
-#random number in a given range 
 random_num = random.randint(1,100)
 print(random_num)
 # random float number in a given range
