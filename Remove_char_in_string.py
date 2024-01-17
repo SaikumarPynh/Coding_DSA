@@ -22,9 +22,9 @@
 #     if i != test_str[rem_pos]:
 #         new_str = new_str + i
 # print(new_str)
+#simple alternative 
 str = input("enter the string:")
 letter = input("enter the letter to be removed:")
-
 new = ''
 for i in str:
     if i != letter:
