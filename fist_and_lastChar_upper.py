@@ -10,10 +10,10 @@
 
 
 test_str = input("entr the test string")
-# # a = test_str.split()
-# # new = []
-# # for i in a:
-# #     n = i[0].upper() + i[1:-1] + i[-1].upper()
-# #     new.append(n)
-# # print(' '.join(new))
-# print(test_str[0].upper()+test_str[1:-1]+test_str[-1].upper())
+a = test_str.split()
+new = []
+for i in a:
+    n = i[0].upper() + i[1:-1] + i[-1].upper()
+    new.append(n)
+print(' '.join(new))
+print(test_str[0].upper()+test_str[1:-1]+test_str[-1].upper())
