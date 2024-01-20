@@ -1,3 +1,4 @@
+"""
 to remove a perticular charecter in a string using replace built in method
 
 
@@ -22,7 +23,7 @@ for  i in test_str:
     if i != test_str[rem_pos]:
         new_str = new_str + i
 print(new_str)
-simple alternative 
+simple alternative """
 str = input("enter the string:")
 letter = input("enter the letter to be removed:")
 new = ''
