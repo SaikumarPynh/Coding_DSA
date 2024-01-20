@@ -1,10 +1,12 @@
 
-#to convert a first and last charecter of a string or word to lower upper case
+"""to convert a first and last charecter of a string or word to lower upper case
 
-# test_str = input("entr the test string")
-# new = test_str.title()[::-1]
-# newer = new[0].upper()+new[1:]
-# print(newer[::-1])
+test_str = input("entr the test string")
+new = test_str.title()[::-1]
+newer = new[0].upper()+new[1:]
+print(newer[::-1])"""
+
+
 test_str = input("entr the test string")
 a = test_str.split()
 new = []
