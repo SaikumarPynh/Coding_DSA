@@ -1,5 +1,5 @@
 strings = input("enter the string")
-# dic = {}
+"""# dic = {}
 # for i in string:
 #     if i in dic.keys():
 #         dic[i] += 1
@@ -7,7 +7,7 @@ strings = input("enter the string")
 #         dic[i] = 1
 # resmax = max(dic,key = dic.get)
 # resmin = min(dic,key = dic.get)
-# print(resmax,resmin)
+# print(resmax,resmin)"""
 dic = {}
 for i in strings:
     if i in dic:
