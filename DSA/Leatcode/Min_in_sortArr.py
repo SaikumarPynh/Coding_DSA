@@ -26,4 +26,22 @@
 # 1 <= n <= 5000
 # -5000 <= nums[i] <= 5000
 # nums is sorted and rotated between 1 and n times.
- 
+ class Solution {
+    public int findMin(int[] nums) {
+         int l = 0;
+         int r = nums.length -1;
+         int min = Integer.MAX_VALUE;
+         while(l <= r)   {
+            
+            if (nums[l] < min){
+                min = nums[l];
+            }
+            if(nums[r] < min){
+                min = nums[r];
+            }
+            l++;
+            r--;
+         }
+         return min;
+    }
+}
