@@ -22,7 +22,21 @@
 # Explanation: The original array was [0,1,2,4,5,6,7] and it was rotated 4 times.
 # Example 3:
 
-# Input: nums = [11,13,15,17]
+# Input: nums = [11,13,15,1
 # Output: 11
 # Explanation: The original array was [11,13,15,17] and it was rotated 4 times. 
- 
+ class Solution {
+    public int findMin(int[] nums) {
+         int l = 0;
+         int r = nums.length -1;
+         while(l < r)   {
+            int m = (l+r) / 2;
+            if (nums[m] < nums[r]){
+                r = m;
+            }else{
+                l = m + 1;
+            }
+         }
+         return nums[l];
+    }
+}
