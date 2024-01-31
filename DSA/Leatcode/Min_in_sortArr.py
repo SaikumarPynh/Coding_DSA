@@ -45,3 +45,18 @@
          return min;
     }
 }
+"""class Solution {
+    public int findMin(int[] nums) {
+        int low = 0;
+        int high = nums.length-1;
+        int min = Integer.MAX_VALUE;
+
+        while(low <= high){
+            if(nums[low] < min) min = nums[low];
+            if(nums[high] < min) min = nums[high];
+            low++;
+            high--;
+        }
+        return min;
+    }
+}"""
