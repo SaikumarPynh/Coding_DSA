@@ -1,5 +1,5 @@
 class Queue{
-    int SIZE = 5;
+    int SIZE = 3;
     int front,rear;
     int[] queue;
 
@@ -32,7 +32,8 @@ class Queue{
             System.out.println("element removed");
 
         }
-        return queue[front];
+
+        return queue[front - 1];
     }
     public boolean isEmpty(){
         if(front == -1){
@@ -62,8 +63,10 @@ public static void main(String[] args){
     q.enqueue(9);
     q.display();
     System.out.println("element deleted"+q.dequeue());
-
+    System.out.println("element deleted"+q.dequeue());
+    System.out.println("element deleted"+q.dequeue());
     q.display();
+    
 
 
 }
