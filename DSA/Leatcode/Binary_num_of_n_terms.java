@@ -19,4 +19,5 @@ class Solution{
         int n = 16;
         s.BinaryGenerator(n);
     }
+    
 }
