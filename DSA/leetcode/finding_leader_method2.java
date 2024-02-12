@@ -17,5 +17,5 @@ class solution{
     public static void main(String[] args){
         int[] arr = {10, 22, 12, 3, 0, 6};
         result(arr);
-    }
+    }   
 }
