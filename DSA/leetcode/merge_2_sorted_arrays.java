@@ -5,11 +5,9 @@ class solution{
         int index = 0;
         int[] arr = new int[m+n];
         while(left < m && right < n){
-            if(arr1[left] <= arr2[right]){
-                arr[index++] = arr1[left++];
-            }else{
-                arr[index++] = arr2[right++];
-            }
+            if(arr1[left] <= arr2[right]) arr[index++] = arr1[left++];
+            else arr[index++] = arr2[right++];
+            
         }
         while(left<m){
             arr[index++] = arr1[left++];
