@@ -10,7 +10,7 @@ class Solution{
             q.add(q.peek()  + "0");
             q.add(q.peek()+ "1");
             i++;
-            System.out.println(q.poll()+ ' ');
+            System.out.println(q.poll());
 
         }
     }

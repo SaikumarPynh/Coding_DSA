@@ -31,9 +31,10 @@ class Node
 	public void insertAtStart(int data)
 	{
 		Node node = new Node();
-		node.data = data;
 		node.next = null;
 		node.next = head;
+		node.data = data;
+
 		head = node;
 	}
 	
@@ -78,18 +79,29 @@ class Node
 			n1 = null;
 		}
 	}
-	
 	public void show()
 	{
 		Node node = head;
 		
-		while(node.next!=null)
+		while(node != null)
 		{
 			System.out.println(node.data);
 			node = node.next;
 		}
-		System.out.println(node.data);
 	}
+	
+	
+	// public void show()
+	// {
+	// 	Node node = head;
+		
+	// 	while(node.next!=null)
+	// 	{
+	// 		System.out.println(node.data);
+	// 		node = node.next;
+	// 	}
+	// 	System.out.println(node.data);
+	// }
 }
 class Runner {
 

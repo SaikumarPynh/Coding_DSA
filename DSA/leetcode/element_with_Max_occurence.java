@@ -3,7 +3,7 @@ class solution{
     public static void result(int[] arr){
         HashMap<Integer,Integer> map = new HashMap<>();
         for(int a:arr){
-            map.put(a,map.getOrDefault(a,0)+1);
+            map.put(a,map.getOrDefault(a,0)+1); 
         }
         int val  = 0;
         int max = 0;
