@@ -39,8 +39,42 @@
             }
 
         }
-        
-        public static void main(String[] args) {
+        public int insertAtLast(int data){
+            if(tail == null){
+                Node node = new Node(data);
+                int val = insertAtFirst(data);
+                return val;
+            }
+            else{
+                Node node = new Node(data);
+                tail.next = node;
+                tail = node;
+                size++;
+                return tail.data;
+            }
+
+        }
+        public boolean isEmpty(){
+            if(head == null){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        public Node getNode(int index){
+            Node temp =  head;
+            if(!isEmpty()){
+                for(int i = 1;i<index;i++){
+                    temp = temp.next;
+                }
+                System.out.println(temp.data);
+                return temp;
+            }else{
+                System.out.println("LL is empty");
+                return temp;
+            }
+        }
+                public static void main(String[] args) {
             LL obj  = new LL();
             obj.insertAtFirst(300);
             obj.insertAtFirst(200);
