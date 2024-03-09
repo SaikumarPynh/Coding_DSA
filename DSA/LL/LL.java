@@ -15,7 +15,30 @@
                 this.next = next;
             }
         }
-        
+        public int insertAtFirst(int data){
+            Node node = new Node(data);
+            node.next = head;
+            head = node;
+            size++;
+            if(tail == null){
+                tail = head;
+            }
+            return node.data;
+    }   
+
+        public void display(){
+            if(head == null){
+                System.out.println("Linked List is Empty");
+            }
+            else{
+                Node temp = head;
+                while(temp != null){
+                    System.out.println(temp.data +" -->");
+                    temp = temp.next;
+                }
+            }
+
+        }
         
         public static void main(String[] args) {
             LL obj  = new LL();
