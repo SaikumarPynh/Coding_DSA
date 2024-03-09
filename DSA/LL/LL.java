@@ -39,6 +39,22 @@
             }
 
         }
+        public Node find(int val){
+            if(isEmpty()){
+                return null;
+            }
+            else{
+                Node temp = head;
+                while(temp != null){
+                    if(temp.data == val){
+                        return temp;
+                    }
+                    temp = temp.next;
+                }
+                return null;
+            }
+        }
+
         public int insertAtLast(int data){
             if(tail == null){
                 Node node = new Node(data);
@@ -152,6 +168,9 @@
             System.out.println("--------");
 
             obj.display();
+            System.out.println("--------");
+            System.out.println(obj.find(200));
+
 
         }
     
