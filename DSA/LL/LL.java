@@ -99,7 +99,33 @@
                 return val;
             }
         }
-        
+        public void insert(int data,int index){
+            if(size == 0){
+                insertAtFirst(data);
+            }else if(index == size - 1){
+                insertAtLast(data);
+            }else{
+                Node prev = getNode(index);
+
+                Node node = new Node(data,prev.next);
+                prev.next = node;
+                size ++;   
+
+            }
+        }
+        public void delete(int index){
+            if(!isEmpty()){
+                if(head == tail){
+                    head = null;
+                    tail = null;
+                    size--;
+                }
+                Node prev = getNode(index - 1);
+                prev.next = prev.next.next;
+
+            }
+        }
+
         
         public static void main(String[] args) {
             LL obj  = new LL();
