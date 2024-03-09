@@ -142,17 +142,17 @@ public class DLL {
         System.out.println(obj.deleteFirst());
         System.out.println("=======");
         obj.display();
-        // System.out.println("=======");
-        // System.out.println(obj.deleteLast());
-        // System.out.println("=======");
-        // obj.display();
-        // obj.insertAfterAValue(300, 310);
-        // System.out.println("=======");
-        // obj.display();
-        // System.out.println("=======");
-        // obj.delete(300);
-        // System.out.println("=======");
-        // obj.display();
+        System.out.println("=======");
+        System.out.println(obj.deleteLast());
+        System.out.println("=======");
+        obj.display();
+        obj.insertAfterAValue(300, 310);
+        System.out.println("=======");
+        obj.display();
+        System.out.println("=======");
+        obj.delete(300);
+        System.out.println("=======");
+        obj.display();
 
 
     }
