@@ -74,7 +74,34 @@
                 return temp;
             }
         }
-                public static void main(String[] args) {
+        public int deleteFirst(){
+            if(!isEmpty()){
+            int val = head.data;
+            head = head.next;
+            size --;
+            
+            return val;
+            }
+            return -1;
+        }
+        public int deleteLast() {
+            if (size <= 1) {
+                int val = tail.data;
+                head = null;
+                tail = null;
+                return val;
+            } else {
+                Node prev = getNode(size - 2);
+                int val = tail.data;
+                tail = prev;
+                prev.next = null;
+                size--;
+                return val;
+            }
+        }
+        
+        
+        public static void main(String[] args) {
             LL obj  = new LL();
             obj.insertAtFirst(300);
             obj.insertAtFirst(200);
