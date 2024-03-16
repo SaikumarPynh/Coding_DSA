@@ -1,3 +1,5 @@
+
+
 import java.util.HashMap;
 class solution{
     public static void result(int[] arr){

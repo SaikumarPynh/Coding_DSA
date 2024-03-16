@@ -10,12 +10,18 @@ class Solution {
             stack.push(word);
         }
 
-        StringBuilder result = new StringBuilder();
+        // StringBuilder result = new StringBuilder();
+        // while (!stack.isEmpty()) {
+        //     result.append(stack.pop()).append(" ");
+        // }
+
+        // return result.toString().trim();
+        String result = "";
         while (!stack.isEmpty()) {
-            result.append(stack.pop()).append(" ");
+            result += stack.pop() + " ";
         }
 
-        return result.toString().trim();
+        return result;
     }
 }
 

@@ -13,7 +13,8 @@ public class arrCopy{
         }
         System.out.println();
         int key = arr[2];
-        int index = Arrays.binarySearch(arr,key);
+        //int index = Arrays.binarySearch(arr,key);
+        int index = arr2.indexOf(key);
         System.out.println(index);
 
         boolean val = Arrays.equals(arr,arr2);
