@@ -26,7 +26,17 @@
 
         //efficient using sliding window method using hashmaps
 
-        
+        HashSet<Character> set = new HashSet<>();
+        for(int right  = 0;right<str.length();right++){
+            Character ch = str.charAt(right);
+            while(set.contains(ch)){
+                set.remove(str.charAt(left));
+                left++;
+            }
+            set.add(ch);
+            max = Math.max(max,right - left+1);
+        }
+
             return max;
         }
         public static void main(String[] args){
