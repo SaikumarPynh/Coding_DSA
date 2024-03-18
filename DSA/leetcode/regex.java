@@ -8,10 +8,10 @@ public class regex{
                     i++;
                     j++;
                 }else if(pattern.charAt(j) == '*'){
-                    if(pattern.charAt(j-1) == input.charAt(i-1)) {
-                    i++;
+                    if(pattern.charAt(j-1)!='.' && pattern.charAt(j-1) != input.charAt(i)) {
+                    j++;
                     }else{
-                        return false;
+                        i++;
                     }
                 }else{
                     if(pattern.charAt(j) != input.charAt(i)) {
