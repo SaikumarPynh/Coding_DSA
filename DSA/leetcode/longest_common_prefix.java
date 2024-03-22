@@ -27,7 +27,6 @@ class Solution {
 
         return s.toString();
     }
-}
     public static void main(String[] args) {
         Solution obj = new Solution();
         String[] strs = {"flower","flow","floght"};
