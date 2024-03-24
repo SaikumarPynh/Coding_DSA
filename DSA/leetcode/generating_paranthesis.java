@@ -35,7 +35,7 @@ import java.util.List;
         System.out.println("Output for n = " + n1 + ": " + result1);
 
         // Example 2
-        int n2 = 1;
+        int n2 = 3;
         List<String> result2 = generator.generateParenthesis(n2);
         System.out.println("Output for n = " + n2 + ": " + result2);
     }
