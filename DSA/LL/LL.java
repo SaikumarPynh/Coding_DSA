@@ -1,3 +1,4 @@
+import Solution.ListNode;
 
 public class LL {
 
@@ -164,6 +165,27 @@ public class LL {
         tail = node;
         tail.next = null;
     }
+    public void swap() {
+        if (head == null || head.next == null) {
+            // There are fewer than two nodes, no need to swap
+            return;
+        }
+    
+        // Store references to the nodes to be swapped
+        Node first = head;
+        Node second = head.next;
+    
+        // Adjust pointers to perform the swap
+        first.next = second.next;
+        second.next = first;
+    
+        // Update the head to the new first node
+        head = second;
+        display();;
+
+    }
+    
+
 
     // https://leetcode.com/problems/merge-two-sorted-lists/submissions/
     public static LL merge(LL first, LL second) {
@@ -282,6 +304,7 @@ public class LL {
 
         first.duplicates();
         first.display();
+        first.swap();
         // second.insertLast(1);
         // second.insertLast(2);
         // second.insertLast(9);
