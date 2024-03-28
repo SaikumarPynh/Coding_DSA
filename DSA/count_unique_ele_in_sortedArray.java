@@ -32,7 +32,7 @@
 }
 
     // same problem but inplace condition
-        class Solution {
+    class Solution {
     public int removeDuplicates(int[] nums) {
         int c = 1;
         for(int i = 1;i<nums.length;i++){
@@ -41,7 +41,6 @@
                 c++;
             }
         }
-    
         return c; // Return the count of unique elements
 
     }
