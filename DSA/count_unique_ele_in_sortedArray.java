@@ -27,10 +27,10 @@
             //             c++;
             //         }
             //     }
-                return c; // Return the count of unique elements
+        //         return c; // Return the count of unique elements
         
-            }
-        }
+        //     }
+        // }
         
         for(int v:res){
             System.out.print(v+" ");
