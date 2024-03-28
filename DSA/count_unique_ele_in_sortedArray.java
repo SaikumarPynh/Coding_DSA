@@ -15,6 +15,23 @@
                 c++;
             }
         }
+            
+        // same problem but inplace condition
+        
+
+            // public int countinguniue(int[] nums) {
+            //     int c = 1;
+            //     for(int i = 1;i<nums.length;i++){
+            //         if(nums[i] != nums[i-1]){
+            //             nums[c] = nums[i];
+            //             c++;
+            //         }
+            //     }
+                return c; // Return the count of unique elements
+        
+            }
+        }
+        
         for(int v:res){
             System.out.print(v+" ");
         }
