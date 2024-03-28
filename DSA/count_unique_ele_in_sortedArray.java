@@ -1,4 +1,4 @@
-public class count_unique_ele_in_sortedArray{
+ class Count_unique_ele_in_sortedArray{
     public  static int  countinguniue(int[] nums){
         int c = 0;
         int[] res = new int[nums.length];
@@ -15,10 +15,14 @@ public class count_unique_ele_in_sortedArray{
                 c++;
             }
         }
+        for(int v:res){
+            System.out.print(v+" ");
+        }
         return c;
     }
     public static  void main(String[] args) {
-        int[] nums = { 0 , 0 , 1 , 1 , 2 , 3 , 4 , 4};
-        System.out.println("count is"+count_unique_ele_in_sortedArray.countinguniue(nums));
+        int[] nums = { 0 , 0 , 1 , 1 , 2 , 3 };
+        System.out.println("count is"+Count_unique_ele_in_sortedArray.countinguniue(nums));
+
     }
 }
