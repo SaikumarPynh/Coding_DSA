@@ -31,7 +31,7 @@
     }
 }
 
-        // same problem but inplace condition
+    // same problem but inplace condition
         class Solution {
     public int removeDuplicates(int[] nums) {
         int c = 1;
