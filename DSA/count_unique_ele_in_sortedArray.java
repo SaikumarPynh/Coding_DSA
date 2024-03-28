@@ -15,10 +15,8 @@
                 c++;
             }
         }
-            
-        
+//for printing the resultant list
 
-        
         for(int v:res){
             System.out.print(v+" ");
         }
