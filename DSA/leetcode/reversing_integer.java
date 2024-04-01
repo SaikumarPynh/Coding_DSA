@@ -38,8 +38,26 @@
         Solution solution = new Solution();
         
         // Example usage
-        int reversed = solution.reverse(123);
-        System.out.println("Reversed number   : " + reversed);
+        // int reversed = solution.reverse(123);
+        // System.out.println("Reversed number   : " + reversed);
+        // StringBuffer s = new StringBuffer();
+        // Strin   g b = "dsfsadf -2323 is str";
+        // char[] c = b.toCharArray();
+        // for (char i : c) {
+        //     if (Character.isDigit(i) || i=='-') {
+        //         System.out.println(i);
+        //         s.append(i);
+        //         }
+        // }System.out.println(s);
+        StringBuilder str1 = new StringBuilder();
+            str1.append('a');
+            str1.append('b');
+            System.out.println(str1);
+            String s = "ab";
+        boolean a = s.equals(str1);
+        System.out.println(a);
+
+        }
+        
     }
-}
  
