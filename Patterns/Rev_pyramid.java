@@ -1,3 +1,6 @@
+// using three for loops making pyramid of stars
+
+
 public class Rev_pyramid {
     public static void nStarTriangle(int n) {
         // Write your code here
