@@ -15,4 +15,18 @@ class printNumbers
         printNos(N);
     }
 }
+// in reverse order
+// class Solution {
+//     int i = 0;
+//     void printNos(int N) {
+//         // code here
+//         if(N == i){
+//             return;
+//         }
+//         System.out.print(N+" ");
+//         N--;
+//         printNos(N);
+        
+//     }
+// }
 
