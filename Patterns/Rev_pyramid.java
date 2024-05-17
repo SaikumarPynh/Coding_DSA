@@ -14,5 +14,5 @@ public class Rev_pyramid {
             }
             System.out.println();
         }
-    }
+    }   
 }

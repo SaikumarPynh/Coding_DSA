@@ -14,5 +14,7 @@ public class PrimeOrNot {
         System.out.println("Enter the number: ");
         int n  = sc.nextInt();
         System.out.println(pm.result(n));
+
+
     }
 }
