@@ -12,6 +12,15 @@ public class movingZeroesToENd {
             nums[j] = 0;
             j++;
         }
-        
+        // for(int i = 1;i< nums.length;i++){
+        //     if(nums[i] != 0){
+        //         // nums[j] = nums[i];
+        //         // j++;
+        //         int temp = nums[i];
+        //         nums[i] = nums[j];
+        //         nums[j] = temp;
+        //         j++;
+        //     }
+        // }
     }
 }
