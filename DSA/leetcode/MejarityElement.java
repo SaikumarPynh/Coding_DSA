@@ -1,4 +1,5 @@
-
+import java.util.HashMap;
+import java.util.Map;
 class  MejarityElement{
     public int majorityElement(int[] nums) {
         int len = nums.length / 2;
