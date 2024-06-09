@@ -16,8 +16,10 @@ public class Anagram {
      // sort the arrays
      Arrays.sort(characterArray1);
      Arrays.sort(characterArray2);
+
      // check for equality, if found equal then anagram, else not an anagram
      boolean isAnagram = Arrays.equals(characterArray1, characterArray2);
      System.out.println("Anagram: "+ isAnagram);
  }
+
 }
