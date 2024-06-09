@@ -8,12 +8,13 @@ public class ArrayMethods {
         Arrays.sort(numbers);
         System.out.println("Sorted array: " + Arrays.toString(numbers));
 
+
         // Filling Arrays with specified number
         int[] fillArray = new int[5];
         Arrays.fill(fillArray, 10);
         System.out.println("Filled array: " + Arrays.toString(fillArray));
 
-        // Binary Search in Arrays
+        // Binary Search in Arrays it will return the index of the element 
         int[] searchArray = {1, 2, 3, 4, 5};
         int index = Arrays.binarySearch(searchArray, 3);
         System.out.println("Index of 3: " + index);
