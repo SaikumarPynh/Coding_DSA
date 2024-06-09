@@ -8,7 +8,7 @@ public class ArrayMethods {
         Arrays.sort(numbers);
         System.out.println("Sorted array: " + Arrays.toString(numbers));
 
-        // Filling Arrays
+        // Filling Arrays with specified number
         int[] fillArray = new int[5];
         Arrays.fill(fillArray, 10);
         System.out.println("Filled array: " + Arrays.toString(fillArray));
