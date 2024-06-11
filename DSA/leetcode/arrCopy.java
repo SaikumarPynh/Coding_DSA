@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.Arrays;
-
 public class arrCopy{
     public static void main(String[] args
     ){
