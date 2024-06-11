@@ -1,3 +1,4 @@
+// code for finding the count of  duplicates
 import java.util.Stack;
 class solution{
     public static int result(int[] arr){
