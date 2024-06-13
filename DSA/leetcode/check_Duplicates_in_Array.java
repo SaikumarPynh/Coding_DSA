@@ -1,3 +1,4 @@
+import java.util.HashMap;
 
 class check_Duplicates_in_Array {
     public boolean containsDuplicate(int[] nums) {
@@ -17,5 +18,13 @@ class check_Duplicates_in_Array {
             }
         }
         return false;
+        // HashMap<Integer,Integer> map = new HashMap<>();
+        // for(int ele:nums){
+        //     map.put(ele,map.getOrDefault(ele,0)+1);
+        //     if(map.get(ele) > 1){
+        //         return true;
+        //     }
+        // }
+        // return false;
     }
 }
