@@ -22,6 +22,7 @@ class annagram{
             System.out.print("not an anagrams");
 
         }
+        //checking the given two strings are anagram or not ,using hashmap method "
         // HashMap<Character,Integer> map1 = new HashMap<>();
         // HashMap<Character,Integer> map2 = new HashMap<>();
         // if(s.length() != t.length()){
