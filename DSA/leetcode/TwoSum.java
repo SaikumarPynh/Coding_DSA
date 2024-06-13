@@ -16,7 +16,6 @@ class TwoSum {
         // }
         // return new int[] {m,n};
         // using hash map method
-
         Map<Integer,Integer> map = new HashMap<>();
         for(int i = 0;i< nums.length;i++){
             int ele = target - nums[i];
