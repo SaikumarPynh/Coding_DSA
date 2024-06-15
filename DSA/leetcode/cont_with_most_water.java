@@ -1,5 +1,6 @@
 class Solution {
     public int maxArea(int[] height) {
+        
         //  solving using two pointer method
         int left = 0;
         int right  = height.length -1;
