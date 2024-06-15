@@ -14,6 +14,7 @@ class Solution {
                 right--;
             }
         }
+        //made some changes to the same approach 
         // int left = 0;
         // int right = height.length - 1;
         // int max = 0;
