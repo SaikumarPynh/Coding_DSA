@@ -12,20 +12,33 @@ class ListNode{
 }
 
 public class Reversing_LL{
-    static Stack<ListNode> s = new Stack<>();
-    static ListNode ReverseLinkedList(ListNode present){
-        while(present != null){
-            s.push(present);
-            present = present.next;
+    // static Stack<ListNode> s = new Stack<>();
+    // static ListNode ReverseLinkedList(ListNode present){
+    //     while(present != null){
+    //         s.push(present);
+    //         present = present.next;
+    //     }
+    //     ListNode res = s.pop();
+    //     ListNode head = res;
+    //     while(!s.isEmpty()){
+    //         head.next = s.pop();
+    //         head = head.next;
+    //     }
+    //     head.next = null;
+    //     return res;
+    static Stack<Integer> stack = new Stack<>();
+    public static ListNode ReverseLinkedList(ListNode head) {
+        ListNode n = head;
+        while(n != null){
+            stack.push(n.val);
+            n = n.next;
         }
-        ListNode res = s.pop();
-        ListNode head = res;
-        while(!s.isEmpty()){
-            head.next = s.pop();
-            head = head.next;
+        ListNode m = head;
+        while(!stack.isEmpty()){
+            m.val = stack.pop();
+            m = m.next;
         }
-        head.next = null;
-        return res;
+        return head;
     }
     public static void main(String[] args){
         ListNode head = new ListNode(10);
