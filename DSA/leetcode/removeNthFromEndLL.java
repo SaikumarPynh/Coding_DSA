@@ -1,6 +1,4 @@
-public class removeNthFromEndLL {
-    
-}
+//https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 class Solution {
     public ListNode removeNthFromEndLL(ListNode head, int n) {
         ListNode t = new ListNode(0);
