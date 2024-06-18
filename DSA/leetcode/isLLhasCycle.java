@@ -14,6 +14,9 @@ public class isLLhasCycle {
     public boolean hasCycle(ListNode head) {
         ListNode fast = head;
         ListNode slow = head;
+        if(head == null){
+            return false;
+        }
         if(head.next == null){
             return false;
         }
