@@ -17,6 +17,7 @@ public class isLLhasCycle {
         if(head == null){
             return false;
         }
+        //adding if statement for the LL without a single node
         if(head.next == null){
             return false;
         }
